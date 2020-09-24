@@ -47,11 +47,11 @@ def model_predict(img_path, model):
     preds = model.predict(x)
     preds=np.argmax(preds, axis=1)
     if preds==0:
-        preds="Cobra"
+        preds="Abdul Kalam"
     elif preds==1:
-        preds="Neam Leaves"
-    else:
         preds="Sadhguru"
+    else:
+        preds="Vajpayee"
     return preds
 
 
